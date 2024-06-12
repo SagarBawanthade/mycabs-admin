@@ -10,7 +10,7 @@ function Cars() {
         // Fetch cars data from backend API
         const fetchData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/cars');
+                const response = await fetch('https://mycab-api.onrender.com/api/cars');
                 if (!response.ok) {
                     throw new Error('Failed to fetch cars');
                 }
