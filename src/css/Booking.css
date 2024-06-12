@@ -1,0 +1,76 @@
+/* Style for the table */
+table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for table head */
+thead {
+  background-color: #f2f2f2;
+}
+
+/* Style for table head cells */
+th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for table body cells */
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for actions column */
+td:last-child {
+  text-align: center;
+}
+
+/* Style for cancel button */
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover effect for cancel button */
+button:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  /* Stack the table rows on small screens */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* Display table cells as full width */
+  td {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Add some space between table rows */
+  tr {
+    margin-bottom: 15px;
+  }
+}
