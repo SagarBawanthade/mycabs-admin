@@ -43,7 +43,7 @@ function AddCarForm() {
     e.preventDefault();
     try {
       // Send car data to the backend API
-      const response = await fetch('http://localhost:5000/api/cars', {
+      const response = await fetch('https://mycab-api.onrender.com/api/cars', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
